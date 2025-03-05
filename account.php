@@ -55,7 +55,7 @@ $connect->close();
                                        
 
                                     </form>
-                                    <form action="php_action/changePassword.php" method="post" class="form-horizontal" id="changePasswordForm">
+                                    <form action="action/change_Password.php" method="post" class="form-horizontal" id="changePasswordForm">
                     
                         <h1>Change Password</h1>
 
