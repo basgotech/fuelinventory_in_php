@@ -64,7 +64,7 @@ foreach ($result as $row) {
                                               
 
              
-                                                <a href="php_action/removeBrand.php?id=<?php echo $row['tanker_id']?>" ><button type="button" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash"></i></button></a>
+                                                <a href="action/remove_tanker.php?id=<?php echo $row['tanker_id']?>" ><button type="button" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash"></i></button></a>
                                            
                                                 
                                                 </td>
