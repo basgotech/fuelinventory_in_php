@@ -20,19 +20,18 @@
                              <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Consumer</span></a>
                             <ul aria-expanded="false" class="collapse">
                            
-                                <li><a href="add_client.php">Add Consumer</a></li>
+                                <li><a href="add_.php">Add Consumer</a></li>
                            
                                 <li><a href="client.php">Manage Consumer</a></li>
                             </ul>
                         </li>
                 
-                        <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Supplier</span></a>
+                        <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Tanker</span></a>
                             <ul aria-expanded="false" class="collapse">
                            
-                                <li><a href="add-brand.php">Add Supplier</a></li>
+                                <li><a href="add-brand.php">Add Tanker</a></li>
                            
-                                <li><a href="brand.php">Manage Supplier</a></li>
-                                 <li><a href="importbrand.php">Import Supplier</a></li>
+                                <li><a href="brand.php">Manager Tanker</a></li>
                             </ul>
                         </li>
                     <?php }?>
