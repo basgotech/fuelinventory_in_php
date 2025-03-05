@@ -7,6 +7,10 @@ if($_POST) {
 extract($_POST);
   $fuel_type = $_POST['fuel_type']; 
 
+  $sql = "SELECT * FROM tanker_inventory WHERE fuel_type = '$fuel_type'";
+  $result = $connect->query($sql);
+
+  if($result->num_rows == 0) {
   $sql = "INSERT INTO tanker_inventory (fuel_type) VALUES ('$fuel_type')";
 
 				if($connect->query($sql) === TRUE) {
@@ -23,5 +27,9 @@ extract($_POST);
 	$connect->close();
 
 	echo json_encode($valid);
+			}
+			else{
+				header('location:../add_fuel_type.php');
+			}
  
 } 

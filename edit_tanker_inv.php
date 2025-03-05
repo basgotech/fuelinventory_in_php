@@ -61,7 +61,7 @@
                                             <div class="row">
                                                 <label class="col-sm-3 control-label">Tanker Quantity</label>
                                                 <div class="col-sm-9">
-                                                  <input type="text"  class="form-control" id="quantity_liters" placeholder="Quantity" name="quantity_liters" value="<?php echo $result['quantity_litter']?>" required=""/>
+                                                  <input type="number"  class="form-control" id="quantity_liters" placeholder="Quantity" name="quantity_liters" value="<?php echo $result['quantity_litter']?>" required=""/>
                                                 </div>
                                             </div>
                                         </div>

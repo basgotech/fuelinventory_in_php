@@ -44,8 +44,14 @@ $result = $connect->query($sql);
 <label class="col-sm-3 control-label">Fuel Type</label>
 <div class="col-sm-9">
 <select class="form-control" id="fuel_type" name="fuel_type">
-<option value="1">Gasoline</option>
-<option value="2">Diesel</option>
+<?php
+    foreach ($result as $row) {
+
+        ?>
+              
+<option value="<?php echo $row['fuel_type'];?> "><?php echo $row['fuel_type'];?></option>
+
+<?php  } ?>
 </select></div>
 </div>
 </div>
