@@ -21,7 +21,7 @@ include('./constant/check.php');
                     <a class="navbar-brand" href="index.php">
                         
                          
-                        <b><img src="./assets/uploadImage/Logo/logo.jpg" style="width: 100%;" alt="homepage" class="dark-logo" style="width:100%;height:auto;"/></b>
+                        <b><img src="./assets/uploadImage/Logo/logo_img.jpg" style="width: 100%;" alt="homepage" class="dark-logo" style="width:100%;height:auto;"/></b>
                        
                     </a>
                 </div>
@@ -54,7 +54,7 @@ include('./constant/check.php');
                             <div class="dropdown-menu dropdown-menu-right animated zoomIn">
                                 <ul class="dropdown-user">
                                    <?php if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
-                                     <li><a href="setting.php"><i class="fa fa-key"></i> Changed Password</a></li>
+                                     <li><a href="account.php"><i class="fa fa-key"></i> Changed Password</a></li>
                                       <li><a href="users.php"><i class="fa fa-user"></i> Add user</a></li>
                                      <?php }?>
                                
