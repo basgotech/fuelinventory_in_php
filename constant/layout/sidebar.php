@@ -29,9 +29,9 @@
                         <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Tanker</span></a>
                             <ul aria-expanded="false" class="collapse">
                            
-                                <li><a href="add-brand.php">Add Tanker</a></li>
+                                <li><a href="add_tanker.php">Add Tanker</a></li>
                            
-                                <li><a href="brand.php">Manager Tanker</a></li>
+                                <li><a href="manage_tanker.php">Manager Tanker</a></li>
                             </ul>
                         </li>
                     <?php }?>
