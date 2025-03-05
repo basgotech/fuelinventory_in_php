@@ -35,6 +35,16 @@
                                 <li><a href="manage_tanker.php">Manager Tanker</a></li>
                             </ul>
                         </li>
+
+                        <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Oil</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                           
+                                <li><a href="add_oil_type.php">Add Oil Type</a></li>
+                                <li><a href="add_oil.php">Add Oil</a></li>
+                           
+                                <li><a href="manage_oil.php">Manager Oil</a></li>
+                            </ul>
+                        </li>
                     <?php }?>
                 
      
