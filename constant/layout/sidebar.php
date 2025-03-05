@@ -30,6 +30,7 @@
                             <ul aria-expanded="false" class="collapse">
                            
                                 <li><a href="add_tanker.php">Add Tanker</a></li>
+                                <li><a href="add_fuel_type.php">Add Fuel Type</a></li>
                            
                                 <li><a href="manage_tanker.php">Manager Tanker</a></li>
                             </ul>

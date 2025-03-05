@@ -44,14 +44,23 @@ $result = $connect->query($sql);
                                        <tbody>
                                         <?php
 foreach ($result as $row) {
+
+    $type= $row['fuel_type'];
+    if($type == 1){
+        $type = "Gasoline";
+    }
+
+    if($type == 2){
+        $type = "Diesel";
+    }
     ?>
                                         <tr>
-                                            <td><?php echo $row['fuel_type'] ?></td>
+                                            <td><?php echo $type; ?></td>
                                             <td><?php echo $row['quantity_litter'] ?></td>
                                           
                                             <td>
             
-                                                <a href="editbrand.php?id=<?php echo $row['tanker_id']?>"><button type="button" class="btn btn-xs btn-primary" ><i class="fa fa-pencil"></i></button></a>
+                                                <a href="edit_tanker_inv.php?id=<?php echo $row['tanker_id']?>"><button type="button" class="btn btn-xs btn-primary" ><i class="fa fa-pencil"></i></button></a>
                                               
 
              
