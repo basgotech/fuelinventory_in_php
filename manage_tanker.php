@@ -36,8 +36,9 @@ $result = $connect->query($sql);
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                              <th>#</th>
                                                 <th>Fuel Type</th>
+                                                <th>Quantity Litters</th>
+                                                <th>Perice Per Litters</th>
                                                 <th>Action</th>
                                             </tr>
                                        </thead>
@@ -57,13 +58,11 @@ foreach ($result as $row) {
                                         <tr>
                                             <td><?php echo $type; ?></td>
                                             <td><?php echo $row['quantity_litter'] ?></td>
+                                            <td><?php echo $row['price_by_lttr'] ?></td>
                                           
                                             <td>
             
                                                 <a href="edit_tanker_inv.php?id=<?php echo $row['tanker_id']?>"><button type="button" class="btn btn-xs btn-primary" ><i class="fa fa-pencil"></i></button></a>
-                                              
-
-             
                                                 <a href="action/remove_tanker.php?id=<?php echo $row['tanker_id']?>" ><button type="button" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash"></i></button></a>
                                            
                                                 

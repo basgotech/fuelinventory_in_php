@@ -12,11 +12,11 @@ $result = $connect->query($sql);
 
 <div class="row page-titles">
 <div class="col-md-5 align-self-center">
-<h3 class="text-primary">Add Consumer</h3> </div>
+<h3 class="text-primary">Add Sell</h3> </div>
 <div class="col-md-7 align-self-center">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-<li class="breadcrumb-item active">Add Client</li>
+<li class="breadcrumb-item active">Add Sell</li>
 </ol>
 </div>
 </div>
@@ -36,7 +36,7 @@ $result = $connect->query($sql);
 <div id="add-brand-messages"></div>
 <div class="card-body">
 <div class="input-states">
-<form class="form-horizontal" method="POST"  id="submitProductForm" action="action/create_tanker_inv.php" method="POST" enctype="multipart/form-data">
+<form class="form-horizontal" method="POST"  id="submitProductForm" action="action/create_sell.php" method="POST" enctype="multipart/form-data">
 
 
 <div class="form-group">
@@ -65,7 +65,33 @@ $result = $connect->query($sql);
 </div>
 </div>
 
+<div class="form-group">
+<div class="row">
+<label class="col-sm-3 control-label"> Total Price</label>
+<div class="col-sm-9">
+<input type="number" class="form-control" id="" placeholder="" name="total_price" autocomplete="off" required="" />
 
+</div>
+</div>
+</div>
+
+
+<div class="form-group">
+<div class="row">
+<label class="col-sm-3 control-label">Payed By</label>
+<div class="col-sm-9">
+<select class="form-control" id="fuel_type" name="fuel_type">
+<?php
+    foreach ($result as $row) {
+
+        ?>
+              
+<option value="<?php echo $row['fuel_type'];?> "><?php echo $row['fuel_type'];?></option>
+
+<?php  } ?>
+</select></div>
+</div>
+</div>
 
 <button type="submit" name="create" id="createProductBtn" class="btn btn-primary btn-flat m-b-30 m-t-30">Submit</button>
 </form>

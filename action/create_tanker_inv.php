@@ -7,6 +7,7 @@ if($_POST) {
 extract($_POST);
   $fuel_type = $_POST['fuel_type']; 
   $quantity_liters = $_POST['quantity_liters'];
+  $unity_price = $_POST['unity_price'];
 
 $tanker_inventory = "SELECT quantity_litter FROM tanker_inventory WHERE fuel_type = '$fuel_type' ";
 $query_tanker = $connect->query($tanker_inventory);

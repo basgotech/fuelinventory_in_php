@@ -17,12 +17,12 @@
                         </li> 
                  
                          <?php if(isset($_SESSION['userId']) && $_SESSION['userId']==1) { ?>
-                             <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-user"></i><span class="hide-menu">Consumer</span></a>
+                             <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Sell</span></a>
                             <ul aria-expanded="false" class="collapse">
                            
-                                <li><a href="add_.php">Add Consumer</a></li>
+                                <li><a href="add_sell.php">Add Sell</a></li>
                            
-                                <li><a href="client.php">Manage Consumer</a></li>
+                                <li><a href="manage_sell.php">Manage Sell</a></li>
                             </ul>
                         </li>
                 
