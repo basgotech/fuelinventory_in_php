@@ -8,10 +8,11 @@ $id = $_GET['id'];
 if($_POST) {	
     
 	 $fuel_type = $_POST['fuel_type']; 
-    $Quantity = $_POST['quantity_liters']; 
+    $Quantity = $_POST['quantity_liters'];
+	$price_by_lttr = $_POST['price_by_lttr'];
 
 
-	$sql = "UPDATE tanker_inventory SET quantity_litter = '$Quantity' WHERE tanker_id = '$id'";
+	$sql = "UPDATE tanker_inventory SET quantity_litter = '$Quantity' , price_by_lttr='$price_by_lttr' WHERE tanker_id = '$id'";
 
 	if($connect->query($sql) === TRUE) {
 	 	$valid['success'] = true;

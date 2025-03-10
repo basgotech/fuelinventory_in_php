@@ -52,6 +52,14 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
+                                                <label class="col-sm-3 control-label">Oil Price</label>
+                                                <div class="col-sm-9">
+                                                  <input type="text"  class="form-control" id="oil_price" placeholder="oil price" name="oil_price" value="<?php echo $result['oil_price']?>" required=""/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
                                                 <label class="col-sm-3 control-label">Oil Amount</label>
                                                 <div class="col-sm-9">
                                                   <input type="text"  class="form-control" id="quantity_liters" placeholder="Quantity" name="quantity_liters" value="<?php echo $result['amount']?>" required=""/>

@@ -3,7 +3,7 @@
 
 <?php include('./constant/layout/sidebar.php');?>   
 <?php include('./constant/connect.php');
-$sql = "SELECT * FROM oil_inventory";
+$sql = "SELECT * FROM transactions";
 $result = $connect->query($sql);
 //echo $sql;exit;
 
@@ -12,57 +12,53 @@ $result = $connect->query($sql);
             
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary"> Manage Oil</h3> </div>
+                    <h3 class="text-primary"> Manage Tanker</h3> </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">View Oil</li>
+                        <li class="breadcrumb-item active">View Supplier</li>
                     </ol>
                 </div>
             </div>
             
             
             <div class="container-fluid">
+                
+                
+                
+                
                  <div class="card">
                             <div class="card-body">
-                              
-                            <a href="add_oil.php"><button class="btn btn-primary">Add Oil</button></a>
-                         
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Oil Type</th>
-                                                <th>Price</th>
-                                                <th>Amount</th>
-                                                <th>Action</th>
+                                                <th>Fuel Type</th>
+                                                <th>Quantity Litters</th>
+                                                <th>Price By Litters</th>
+                                                <th>Total Price</th>
+                                                <th>Payed by</th>
+                                                <th>Transaction Date</th>
                                             </tr>
                                        </thead>
                                        <tbody>
                                         <?php
 foreach ($result as $row) {
+    $select_ = "SELECT * FROM payment WHERE pay_id = '{$row['payed_by']}' ";
+    $qry_select = $connect->query($select_);
+    $get_sele = $qry_select->fetch_assoc();
+    $select_val = $get_sele['pay_method'];
 
-    if($row['oil_lit_type'] == 1){
-        $ltt = "Litter";
-    }else{
-        $ltt = "Litters";
-    }
     ?>
                                         <tr>
-                                            <td><?php echo $row['oil_lit_type'];?> <?php echo $ltt; ?></td>
-                                            <td><?php echo $row['oil_price'] ?></td>
-                                            <td><?php echo $row['amount'] ?></td>
+                                            <td><?php echo $row['fuel_type']; ?></td>
+                                            <td><?php echo $row['quantity_liters'] ?></td>
+                                            <td><?php echo $row['single_price'] ?></td>
+                                            <td><?php echo $row['total_price'] ?></td>
+                                            <td><?php echo $select_val ?></td>
+                                            <td><?php echo $row['transaction_date'] ?></td>
                                           
-                                            <td>
-            
-                                                <a href="edit_oil_inv.php?id=<?php echo $row['oil_id']?>"><button type="button" class="btn btn-xs btn-primary" ><i class="fa fa-pencil"></i></button></a>
-                                              
-
-             
-                                                <a href="action/remove_oil.php?id=<?php echo $row['oil_id']?>" ><button type="button" class="btn btn-xs btn-danger" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash"></i></button></a>
                                            
-                                                
-                                                </td>
                                         </tr>
                                       
                                     </tbody>

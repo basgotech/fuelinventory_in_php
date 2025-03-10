@@ -8,10 +8,11 @@ $id = $_GET['id'];
 if($_POST) {	
     
 	 $oil_type = $_POST['oil_type']; 
+	 $oil_price = $_POST['oil_price']; 
     $quantity_liters = $_POST['quantity_liters']; 
 
 
-	$sql = "UPDATE oil_inventory SET amount = '$quantity_liters' WHERE oil_id = '$id'";
+	$sql = "UPDATE oil_inventory SET amount = '$quantity_liters' , oil_price = '$oil_price' WHERE oil_id = '$id'";
 
 	if($connect->query($sql) === TRUE) {
 	 	$valid['success'] = true;

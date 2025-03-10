@@ -20,8 +20,8 @@
                              <li> <a class="has-arrow" href="#" aria-expanded="false"><i class="fa fa-users"></i><span class="hide-menu">Sell</span></a>
                             <ul aria-expanded="false" class="collapse">
                            
-                                <li><a href="add_sell.php">Add Sell</a></li>
-                           
+                                <li><a href="sell_fuel.php">Sell Fuel</a></li>
+                                <li><a href="sell_oil.php">Sell Oil</a></li>
                                 <li><a href="manage_sell.php">Manage Sell</a></li>
                             </ul>
                         </li>
