@@ -5,7 +5,7 @@
 <?php include('./constant/layout/sidebar.php');?>   
 <?php 
 
-// $sql = "SELECT * FROM product WHERE status = 1";
+// $sql = "SELECT * FROM oil_inventory WHERE fuel_type = 'Diesel' ";
 // $query = $connect->query($sql);
 // $countProduct = $query->num_rows;
 
