@@ -55,7 +55,7 @@ $countBenzin = $row['quantity_litter'];
                                 <div class="media-body media-text-right">
                                  
                             
-                                    <h2 class="color-white"><?php echo $countDiesel." Litters"; ?></h2>
+                                    <h2 class="color-white"><?php echo $countDiesel." Liters"; ?></h2>
                                     <a href="product.php"><p class="m-b-0">Total Diesel</p></a>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@ $countBenzin = $row['quantity_litter'];
                                 <span><i class="mdi mdi-gas-cylinder f-s-50"></i></span>
                                 </div>
                                 <div class="media-body media-text-right">
-                                <h2 class="color-white"><?php echo $countGasoline." Litters"; ?></h2>
+                                <h2 class="color-white"><?php echo $countGasoline." Liters"; ?></h2>
                                      <a href="#"><p class="m-b-0">Total Gasoline</p></a>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@ $countBenzin = $row['quantity_litter'];
                                 </div>
                                 <div class="media-body media-text-right">
                                     
-                                <h2 class="color-white"><?php echo $countBenzin." Litters"; ?></h2>
+                                <h2 class="color-white"><?php echo $countBenzin." Liters"; ?></h2>
                                     <a href="Order.php"><p class="m-b-0">Total Benzin</p></a>
                                 </div>
                             </div>
