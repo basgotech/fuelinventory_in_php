@@ -4,7 +4,7 @@
 <?php include('./constant/layout/sidebar.php');?>  
 
 <?php
-$sql = "SELECT * FROM tanker_inventory";
+$sql = "SELECT * FROM oil_inventory";
 $result = $connect->query($sql);
 
 
@@ -47,13 +47,19 @@ $result_payment = $connect->query($sql_pay);
 <div class="row">
 <label class="col-sm-3 control-label">Oil Type</label>
 <div class="col-sm-9">
-<select class="form-control" id="fuel_type" name="fuel_type">
+<select class="form-control" id="oil_lit_type" name="oil_lit_type">
 <?php
     foreach ($result as $row) {
+$litter = $row['oil_lit_type'];
 
+if ($litter == "1"){
+    $litter = "Litter";
+}else{
+    $litter = "Litters";
+}
         ?>
               
-<option value="<?php echo $row['fuel_type'];?> "><?php echo $row['fuel_type'];?></option>
+<option value="<?php echo $row['oil_lit_type'];?> "><?php echo $row['oil_lit_type']." ".$litter;?></option>
 
 <?php  } ?>
 </select></div>
@@ -63,7 +69,7 @@ $result_payment = $connect->query($sql_pay);
 <div class="row">
 <label class="col-sm-3 control-label"> Quantity</label>
 <div class="col-sm-9">
-<input type="number" class="form-control" id="" placeholder="" name="quantity_liters" autocomplete="off" required="" />
+<input type="number" class="form-control" id="" placeholder="" name="amount_by_lttr" autocomplete="off" required="" />
 
 </div>
 </div>
