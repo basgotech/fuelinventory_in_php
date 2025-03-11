@@ -12,7 +12,7 @@
     
     <script src="assets/js/lib/bootstrap/js/popper.min.js"></script>
     <script src="assets/js/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/lib/bootstrap/js/bootstrap.js"></script>
+    
     
     <script src="assets/js/jquery.slimscroll.js"></script>
     
