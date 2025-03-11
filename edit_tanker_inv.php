@@ -67,9 +67,9 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
-                                                <label class="col-sm-3 control-label">Price By Litters</label>
+                                                <label class="col-sm-3 control-label">Price By liters</label>
                                                 <div class="col-sm-9">
-                                                  <input type="text"  class="form-control" id="price_by_lttr" placeholder="Price By Litters" name="price_by_lttr" value="<?php echo $result['price_by_lttr']?>" required=""/>
+                                                  <input type="text"  class="form-control" id="price_by_lttr" placeholder="Price By liters" name="price_by_lttr" value="<?php echo $result['price_by_lttr']?>" required=""/>
                                                 </div>
                                             </div>
                                         </div>

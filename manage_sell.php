@@ -33,6 +33,7 @@ $result = $connect->query($sql);
                                     <table id="myTable" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
+                                                <th>No</th>
                                                 <th>Fuel Type</th>
                                                 <th>Quantity Litters</th>
                                                 <th>Price By Litters</th>
@@ -43,15 +44,29 @@ $result = $connect->query($sql);
                                        </thead>
                                        <tbody>
                                         <?php
+                                        $num= 0;
 foreach ($result as $row) {
+    $num++;
     $select_ = "SELECT * FROM payment WHERE pay_id = '{$row['payed_by']}' ";
     $qry_select = $connect->query($select_);
     $get_sele = $qry_select->fetch_assoc();
     $select_val = $get_sele['pay_method'];
+    $litter = "";
+    if ($row['type'] == '2' && $row['fuel_type'] == '1'){
+         $litter = "Liter";
+    }
+    else{
+        $litter = "liters";
+    }
+
+    if ($row['type'] == '1'){
+        $litter = "";
+    }
 
     ?>
                                         <tr>
-                                            <td><?php echo $row['fuel_type']; ?></td>
+                                            <td><?php echo $num;?></td>
+                                            <td><?php echo $row['fuel_type']." ".$litter; ?></td>
                                             <td><?php echo $row['quantity_liters'] ?></td>
                                             <td><?php echo $row['single_price'] ?></td>
                                             <td><?php echo $row['total_price'] ?></td>

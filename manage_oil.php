@@ -43,9 +43,9 @@ $result = $connect->query($sql);
 foreach ($result as $row) {
 
     if($row['oil_lit_type'] == 1){
-        $ltt = "Litter";
+        $ltt = "liter";
     }else{
-        $ltt = "Litters";
+        $ltt = "liters";
     }
     ?>
                                         <tr>

@@ -53,9 +53,9 @@ $result_payment = $connect->query($sql_pay);
 $litter = $row['oil_lit_type'];
 
 if ($litter == "1"){
-    $litter = "Litter";
+    $litter = "liter";
 }else{
-    $litter = "Litters";
+    $litter = "liters";
 }
         ?>
               

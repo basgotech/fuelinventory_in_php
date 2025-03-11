@@ -44,7 +44,7 @@
 
                                    <div class="form-group">
                                             <div class="row">
-                                                <label class="col-sm-3 control-label">Oil Litter Type</label>
+                                                <label class="col-sm-3 control-label">Oil liter Type</label>
                                                 <div class="col-sm-9">
                                                   <input type="text"  class="form-control" id="fuel_type" name="oil_type" value="<?php echo $result['oil_lit_type']?>" required="" readonly/>
                                                 </div>

@@ -37,8 +37,8 @@ $result = $connect->query($sql);
                                         <thead>
                                             <tr>
                                                 <th>Fuel Type</th>
-                                                <th>Quantity Litters</th>
-                                                <th>Perice Per Litters</th>
+                                                <th>Quantity liters</th>
+                                                <th>Perice Per liters</th>
                                                 <th>Action</th>
                                             </tr>
                                        </thead>
