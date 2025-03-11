@@ -8,9 +8,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="description" content="This Gasmark gas agency System Developed by Mayuri K. Freelancer in india">
-<meta name="keywords" content="Mayuri K.freelancer in india">
-<meta name="author" content="Mayuri K">
+<meta name="description" content="This GSMS Developed by Basliel Tegegn. Freelancer in Ethiopia">
+<meta name="keywords" content="Basliel From Ethiopia">
+<meta name="author" content="Basliel Tegegn">
     
     <link rel="icon" type="image/png" sizes="16x16" href="assets/uploadImage/Logo/fevicon.png">
      <?php
@@ -27,7 +27,7 @@
     }
 }
 </style>
-    <title>GasMark Agency System - Mayuri K</title>
+    <title>SANKURA NOC GSMS</title>
 
     <link href="assets/css/lib/chartist/chartist.min.css" rel="stylesheet">
   <link href="assets/css/lib/owl.carousel.min.css" rel="stylesheet" />
