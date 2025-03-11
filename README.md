@@ -1,4 +1,4 @@
-Gas Station Management System Based on PHP
+Gas Station Management System Based on PHP 
 
 Overview
 
@@ -19,3 +19,5 @@ Customer Transactions: Monitor fuel consumption and payments.
 Price Management: Store and update fuel and oil prices.
 
 Reporting: Generate reports on fuel usage and sales.
+
+<author> Basliel
